@@ -1,0 +1,11 @@
+Package: FOptM
+Type: Package
+Title: Optimizes functions under orthonormal constraints (Stiefel Manifold)
+Version: 0.1
+Date: 2016-08-02
+Author: Andrew J. Landgraf
+Maintainer: Andrew J. Landgraf <andland@gmail.com>
+Description: Optimizes functions under orthonormal constraints (Stiefel Manifold).
+License: GPL-3
+LazyData: TRUE
+RoxygenNote: 5.0.1
