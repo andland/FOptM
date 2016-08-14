@@ -1,4 +1,4 @@
 library(matconv)
-mat2r("~/Downloads/FOptM-share/OptStiefelGBB.m", "R/OptStiefelGBB.R")
+mat2r("dev/FOptM_matlab_code/OptStiefelGBB.m", "R/OptStiefelGBB.R")
 
-mat2r("~/Downloads/FOptM-share/MGramSchmidt.m", "R/MGramSchmidt.R")
+mat2r("dev/FOptM_matlab_code/MGramSchmidt.m", "R/MGramSchmidt.R")

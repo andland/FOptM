@@ -298,6 +298,8 @@ OptStiefelGBB <- function(fun, X, size, opts, ...) {
       if (invH) {
         X <- solve(eyen + tau*H, XP - tau*RX)
       } else {
+        # print(tau)
+        # print(cbind(eye2k + (0.5 * tau) * VU, NA, VX))
         aa <- solve(eye2k + (0.5 * tau) * VU, VX)
         X <- XP - U %*% (tau*aa)
       }
@@ -422,6 +424,7 @@ OptStiefelGBB <- function(fun, X, size, opts, ...) {
   out$nrmG <- nrmG
   out$fval <- f
   out$itr <- itr
+  out$tau = tau
 
   return(list(X = X, out = out))
 

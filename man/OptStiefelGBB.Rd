@@ -42,4 +42,9 @@ A = t(A) \%*\% A
 
 res = OptStiefelGBB(fun, size = c(n, k), A = A)
 }
+\references{
+Zaiwen Wen and Wotao Yin. A Feasible method for Optimization with
+  Orthogonality Constraints, Optimization Online, 11/2010. Also as Rice
+  CAAM Tech Report TR10-26.
+}
 
