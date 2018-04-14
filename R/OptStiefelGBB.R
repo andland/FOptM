@@ -19,7 +19,7 @@
 #'   Orthogonality Constraints, Optimization Online, 11/2010. Also as Rice
 #'   CAAM Tech Report TR10-26.
 #' @export
-#'
+#' @importFrom stats rnorm
 #' @examples
 #' fun <- function(X,  A) {
 #'   G = -(A %*% X)

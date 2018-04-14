@@ -2,3 +2,4 @@
 
 export(MGramSchmidt)
 export(OptStiefelGBB)
+importFrom(stats,rnorm)
