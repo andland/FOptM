@@ -12,7 +12,7 @@ return a list with two named elements:
 \code{f}, which is the value of the objective function and \code{G}, which is
 the derivative}
 
-\item{X}{the initial orthonormal}
+\item{X}{the initial orthonormal matrix}
 
 \item{size}{if initial value for \code{X} is not given, the number of rows and columns
 can be given instead in a two-element vector. Number of columns must be less than the
@@ -28,6 +28,10 @@ list with \code{X}, which is the solution found, and \code{out},
 }
 \description{
 Gradient based optimization on the Stiefel manifold
+}
+\details{
+This R package ports the MATLAB code from the authors' website
+  http://optman.blogs.rice.edu/
 }
 \examples{
 fun <- function(X,  A) {

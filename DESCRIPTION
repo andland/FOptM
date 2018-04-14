@@ -5,7 +5,10 @@ Version: 0.1
 Date: 2016-08-14
 Author: Andrew J. Landgraf
 Maintainer: Andrew J. Landgraf <andland@gmail.com>
-Description: Optimizes functions under orthonormal constraints (Stiefel Manifold).
+Description: Optimizes functions under orthonormal constraints (Stiefel Manifold). 
+  Based on the code provided by the authors of Zaiwen Wen and Wotao Yin. A Feasible 
+  method for Optimization with Orthogonality Constraints, Optimization Online, 11/2010. 
+  Also as Rice CAAM Tech Report TR10-26.
 License: GPL-3
 LazyData: TRUE
 RoxygenNote: 5.0.1

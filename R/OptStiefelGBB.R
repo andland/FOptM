@@ -4,7 +4,7 @@
 #'   return a list with two named elements:
 #'   \code{f}, which is the value of the objective function and \code{G}, which is
 #'   the derivative
-#' @param X the initial orthonormal
+#' @param X the initial orthonormal matrix
 #' @param size if initial value for \code{X} is not given, the number of rows and columns
 #'   can be given instead in a two-element vector. Number of columns must be less than the
 #'   number of rows
@@ -13,6 +13,8 @@
 #'
 #' @return list with \code{X}, which is the solution found, and \code{out},
 #'   which includes supplementary material
+#' @details This R package ports the MATLAB code from the authors' website
+#'   http://optman.blogs.rice.edu/
 #' @references Zaiwen Wen and Wotao Yin. A Feasible method for Optimization with
 #'   Orthogonality Constraints, Optimization Online, 11/2010. Also as Rice
 #'   CAAM Tech Report TR10-26.
