@@ -21,17 +21,27 @@
 #' @export
 #' @importFrom stats rnorm
 #' @examples
+#'
+#' # find the first eigenvector
 #' fun <- function(X,  A) {
 #'   G = -(A %*% X)
 #'   f = 0.5 * sum(t(G) %*% X)
 #'   list(f = f, G = G)
 #' }
 #'
-#' n = 1000; k = 6
+#' n = 1000; k = 1
 #' A = matrix(rnorm(n^2), n, n)
 #' A = t(A) %*% A
 #'
 #' res = OptStiefelGBB(fun, size = c(n, k), A = A)
+#'
+#' # objective function should be close to the sum of the first eigenvalue
+#' eig = eigen(A)
+#' sum(eig$values[1:k])
+#' -2 * res$out$fval
+#'
+#' plot(res$X[, 1], eig$vectors[, 1])
+#'
 OptStiefelGBB <- function(fun, X, size, opts, ...) {
   #-------------------------------------------------------------------------
   # curvilinear search algorithm for optimization on Stiefel manifold

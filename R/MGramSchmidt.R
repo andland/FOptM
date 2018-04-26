@@ -22,8 +22,9 @@ MGramSchmidt <- function(V) {
   return(V)
 }
 
-#project v onto u
+# project v onto u
+# v and u should be vectors
 proj <- function(u, v) {
-  v <- (crossprod(v, u) / crossprod(u, u)) * u
+  v <- as.numeric(crossprod(v, u) / crossprod(u, u)) * u
   return(v)
 }
