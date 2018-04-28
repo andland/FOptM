@@ -11,4 +11,6 @@ Description: Optimizes functions under orthonormal constraints (Stiefel Manifold
   Also as Rice CAAM Tech Report TR10-26.
 License: GPL-3
 LazyData: TRUE
+URL: https://github.com/andland/FOptM
+BugReports: https://github.com/andland/FOptM/issues
 RoxygenNote: 5.0.1
